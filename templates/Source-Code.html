@@ -1,0 +1,254 @@
+{% block head %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="page_type" content="np-template-header-footer-from-plugin">
+<title>Source Code</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Source-Code.css') }}">
+<script src="{{ url_for('static', filename='css/jquery-1.9.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='css/nicepage.js') }}"></script>
+<link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+
+
+
+
+<script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/logo.jpg"
+}</script>
+<meta property="og:title" content="Source Code">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#05a1f6">
+{% endblock %}
+
+{% block body %}
+<body class="u-body">
+    <header class="u-clearfix u-header u-header" id="sec-fe09">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <a href="Home.html" class="u-image u-logo u-image-1" data-image-width="1510" data-image-height="1080"
+                title="HOME.html">
+                <img src="{{url_for('static', filename='css/images/logo.jpg')}}" class="u-logo-image u-logo-image-1"
+                    data-image-width="64">
+            </a>
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                <div class="menu-collapse"
+                    style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                    <a class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                        href="#">
+                        <svg>
+                            <use xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                                    <rect y="1" width="16" height="2"></rect>
+                                    <rect y="7" width="16" height="2"></rect>
+                                    <rect y="13" width="16" height="2"></rect>
+                                </symbol>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                                href="{{ url_for('hello') }}" style="padding: 10px 2px;">HOME</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                                href="{{ url_for('main') }}" style="padding: 10px 2px;">Translator</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                                href="{{ url_for('donate') }}" style="padding: 10px 2px;">DONATE</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                                href="{{ url_for('source') }}" style="padding: 10px 2px;">SOURCE CODE</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                                href="{{ url_for('research') }}" style="padding: 10px 2px;">RESEARCH PAPER</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                                href="{{ url_for('learn') }}" style="padding: 10px 2px;">LEARN</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-border-2 u-border-active-black u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-black u-text-grey-90 u-text-hover-grey-90"
+                                href="{{ url_for('about') }}" style="padding: 10px 2px;">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('hello') }}"
+                                        style="padding: 10px 2px;">HOME</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('main') }}"
+                                        style="padding: 10px 2px;">Translator</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('donate') }}"
+                                        style="padding: 10px 2px;">DONATE</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('source') }}"
+                                        style="padding: 10px 2px;">SOURCE CODE</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('research') }}"
+                                        style="padding: 10px 2px;">RESEARCH PAPER</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('learn') }}"
+                                        style="padding: 10px 2px;">LEARN</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('about') }}"
+                                        style="padding: 10px 2px;">ABOUT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+            </div>
+    </header>
+    <section class="u-clearfix u-grey-5 u-section-1" id="sec-aac6">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h3 class="u-text u-text-1">Predict.py</h3>
+            <p class="u-text u-text-2">from keras.models import model_from_json<br>import operator<br>import cv2<br>from
+                flask import Flask, Response, render_template<br>
+                <br># Loading the model<br>json_file = open("model-bw.json", "r")<br>model_json =
+                json_file.read()<br>json_file.close()<br>loaded_model = model_from_json(model_json)<br># load weights
+                into new model<br>loaded_model.load_weights("model-bw.h5")<br>print("Loaded model from disk")<br>
+                <br>cap = cv2.VideoCapture(0)<br>app = Flask(__name__)<br>
+                <br>
+                <br>def stream():<br> while True:<br> _, frame = cap.read()<br> # imgencode =
+                cv2.imencode('.jpg',frame)[1]<br> # stringData = imgencode.tostring()<br> # Simulating mirror image<br>
+                frame = cv2.flip(frame, 1)<br>
+                <br> # Got this from collect-data.py<br> # Coordinates of the ROI<br> x1 = int(0.5 * frame.shape[1])<br>
+                y1 = 10<br> x2 = frame.shape[1] - 10<br> y2 = int(0.5 * frame.shape[1])<br> # Drawing the ROI<br> # The
+                increment/decrement by 1 is to compensate for the bounding box<br> cv2.rectangle(frame, (x1 - 1, y1 -
+                1),<br> (x2 + 1, y2 + 1), (255, 0, 0), 1)<br> # Extracting the ROI<br> roi = frame[y1:y2, x1:x2]<br>
+                <br> # Resizing the ROI so it can be fed to the model for prediction<br> roi = cv2.resize(roi, (64,
+                64))<br> roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)<br> _, test_image = cv2.threshold(roi, 120, 255,
+                cv2.THRESH_BINARY)<br> # cv2.imshow("test", test_image)<br> # Batch of 1<br> result =
+                loaded_model.predict(test_image.reshape(1, 64, 64, 1))<br> prediction = {'A': result[0][0],<br> 'B':
+                result[0][1],<br> 'C': result[0][2],<br> 'D': result[0][3],<br> 'E': result[0][4],<br> 'F':
+                result[0][5],<br> 'G': result[0][6],<br> 'H': result[0][7],<br> 'I': result[0][8],<br> 'J':
+                result[0][9],<br> 'K': result[0][10],<br> 'L': result[0][11],<br> 'M': result[0][12],<br> 'N':
+                result[0][13],<br> 'O': result[0][14],<br> 'P': result[0][15],<br> 'Q': result[0][16],<br> 'R':
+                result[0][17],<br> 'S': result[0][18],<br> 'T': result[0][19],<br> 'U': result[0][20],<br> 'V':
+                result[0][21],<br> 'W': result[0][22],<br> 'X': result[0][23],<br> 'Y': result[0][24],<br> 'Z':
+                result[0][25], }<br>
+                <br> # Sorting based on top prediction<br> prediction = sorted(prediction.items(),<br>
+                key=operator.itemgetter(1), reverse=True)<br>
+                <br> # Displaying the predictions<br> cv2.putText(frame, prediction[0][0], (10, 120),<br>
+                cv2.FONT_HERSHEY_PLAIN, 1, (0, 0, 255), 1)<br> # cv2.imshow("Frame", frame)<br> imgencode =
+                cv2.imencode('.jpg', frame)[1]<br> stringData = imgencode.tostring()<br> # interrupt =
+                cv2.waitKey(10)<br> # if interrupt &amp; 0xFF == 27: # esc key<br> yield (b'--frame\r\n'b'Content-Type:
+                text/plain\r\n\r\n'+stringData+b'\r\n')<br> # break<br>
+                <br># cap.release()<br># cv2.destroyAllWindows()<br>
+                <br>
+                <br>@app.route('/video')<br>def video():<br> return Response(stream(),
+                mimetype='multipart/x-mixed-replace; boundary=frame')<br>
+                <br>
+                <br>@app.route('/')<br>def main():<br> return render_template('index.html')<br>
+                <br>
+                <br>if __name__ == "__main__":<br> app.run()
+            </p>
+        </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-3" id="sec-6cc2">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h3 class="u-text u-text-1">Train.py</h3>
+            <p class="u-text u-text-2"># Importing the Keras libraries and packages<br>from keras.models import
+                Sequential<br>from keras.layers import Convolution2D<br>from keras.layers import MaxPooling2D<br>from
+                keras.layers import Flatten<br>from keras.layers import Dense<br>
+                <br># Step 1 - Building the CNN<br>
+                <br># Initializing the CNN<br>classifier = Sequential()<br>
+                <br># First convolution layer and pooling<br>classifier.add(Convolution2D(32, (3, 3), input_shape=(64,
+                64, 1), activation='relu'))<br>classifier.add(MaxPooling2D(pool_size=(2, 2)))<br># Second convolution
+                layer and pooling<br>classifier.add(Convolution2D(32, (3, 3), activation='relu'))<br># input_shape is
+                going to be the pooled feature maps from the previous convolution
+                layer<br>classifier.add(MaxPooling2D(pool_size=(2, 2)))<br>
+                <br># Flattening the layers<br>classifier.add(Flatten())<br>
+                <br># Adding a fully connected layer<br>classifier.add(Dense(units=128,
+                activation='relu'))<br>classifier.add(Dense(units=26, activation='softmax')) # softmax for more than
+                2<br>
+                <br># Compiling the CNN<br>classifier.compile(optimizer='adam', loss='categorical_crossentropy',
+                metrics=['accuracy']) # categorical_crossentropy for more than 2<br>
+                <br>
+                <br># Step 2 - Preparing the train/test data and training the model<br>
+                <br># Code copied from - https://keras.io/preprocessing/image/<br>from keras.preprocessing.image import
+                ImageDataGenerator<br>
+                <br>train_datagen = ImageDataGenerator(<br> rescale=1./255,<br> shear_range=0.2,<br> zoom_range=0.2,<br>
+                horizontal_flip=True)<br>
+                <br>test_datagen = ImageDataGenerator(rescale=1./255)<br>
+                <br>training_set = train_datagen.flow_from_directory('data/train',<br> target_size=(64, 64),<br>
+                batch_size=3,<br> color_mode='grayscale',<br> class_mode='categorical')<br>
+                <br>test_set = test_datagen.flow_from_directory('data/test',<br> target_size=(64, 64),<br>
+                batch_size=3,<br> color_mode='grayscale',<br> class_mode='categorical')<br>classifier.fit_generator(<br>
+                training_set,<br> steps_per_epoch=31200//3, # No of images in training set<br> epochs=10,<br>
+                validation_data=test_set,<br> validation_steps=7800//3) # No of images in test set<br>
+                <br>
+                <br># Saving the model<br>model_json = classifier.to_json()<br>with open("model-bw.json", "w") as
+                json_file:<br> json_file.write(model_json)<br>classifier.save_weights('model-bw.h5')
+            </p>
+        </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-4" id="sec-b27d">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h3 class="u-text u-text-1">Collectdata.py</h3>
+            <p class="u-text u-text-2"># Importing the Keras libraries and packages<br>from keras.models import
+                Sequential<br>from keras.layers import Convolution2D<br>from keras.layers import MaxPooling2D<br>from
+                keras.layers import Flatten<br>from keras.layers import Dense<br>
+                <br># Step 1 - Building the CNN<br>
+                <br># Initializing the CNN<br>classifier = Sequential()<br>
+                <br># First convolution layer and pooling<br>classifier.add(Convolution2D(32, (3, 3), input_shape=(64,
+                64, 1), activation='relu'))<br>classifier.add(MaxPooling2D(pool_size=(2, 2)))<br># Second convolution
+                layer and pooling<br>classifier.add(Convolution2D(32, (3, 3), activation='relu'))<br># input_shape is
+                going to be the pooled feature maps from the previous convolution
+                layer<br>classifier.add(MaxPooling2D(pool_size=(2, 2)))<br>
+                <br># Flattening the layers<br>classifier.add(Flatten())<br>
+                <br># Adding a fully connected layer<br>classifier.add(Dense(units=128,
+                activation='relu'))<br>classifier.add(Dense(units=26, activation='softmax')) # softmax for more than
+                2<br>
+                <br># Compiling the CNN<br>classifier.compile(optimizer='adam', loss='categorical_crossentropy',
+                metrics=['accuracy']) # categorical_crossentropy for more than 2<br>
+                <br>
+                <br># Step 2 - Preparing the train/test data and training the model<br>
+                <br># Code copied from - https://keras.io/preprocessing/image/<br>from keras.preprocessing.image import
+                ImageDataGenerator<br>
+                <br>train_datagen = ImageDataGenerator(<br> rescale=1./255,<br> shear_range=0.2,<br> zoom_range=0.2,<br>
+                horizontal_flip=True)<br>
+                <br>test_datagen = ImageDataGenerator(rescale=1./255)<br>
+                <br>training_set = train_datagen.flow_from_directory('data/train',<br> target_size=(64, 64),<br>
+                batch_size=3,<br> color_mode='grayscale',<br> class_mode='categorical')<br>
+                <br>test_set = test_datagen.flow_from_directory('data/test',<br> target_size=(64, 64),<br>
+                batch_size=3,<br> color_mode='grayscale',<br> class_mode='categorical')<br>classifier.fit_generator(<br>
+                training_set,<br> steps_per_epoch=31200//3, # No of images in training set<br> epochs=10,<br>
+                validation_data=test_set,<br> validation_steps=7800//3) # No of images in test set<br>
+                <br>
+                <br># Saving the model<br>model_json = classifier.to_json()<br>with open("model-bw.json", "w") as
+                json_file:<br> json_file.write(model_json)<br>classifier.save_weights('model-bw.h5')
+            </p>
+        </div>
+    </section>
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-9ddf">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">2021</p>
+        </div>
+    </footer>
+</body>
+{% endblock %}

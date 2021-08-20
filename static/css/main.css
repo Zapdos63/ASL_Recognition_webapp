@@ -1,0 +1,7 @@
+<script src="{{ url_for('static', filename='css/jquery-1.9.1.min.js') }}"></script>
+<script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+<img src="{{url_for('static', filename='css/images/NIDCD-ASL-hands-2019.jpg')}}" class="u-image u-image-default u-image-2" alt="" data-image-width="370"
+        data-image-height="626">
+<img class="u-image u-image-default u-image-2" src="images/NIDCD-ASL-hands-2019.jpg" alt="" data-image-width="370"
+        data-image-height="626">
+      
